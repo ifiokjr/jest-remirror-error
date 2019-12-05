@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.next
+.vscode/
+bundles
+node_modules
+out
+yarn-error.log
+*.code-workspace
+.jest/
