@@ -7,11 +7,11 @@
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
-    "@remirror/core": "^v0.7.0",
-    "@remirror/core-extensions": "^v0.7.0",
-    "@remirror/extension-emoji": "^v0.7.0",
-    "@remirror/react": "^v0.7.0",
-    "@remirror/react-utils": "^v0.7.0",
+    "@remirror/core": "^0.7.2",
+    "@remirror/core-extensions": "^0.7.2",
+    "@remirror/extension-emoji": "^0.7.2",
+    "@remirror/react": "^0.7.2",
+    "@remirror/react-utils": "^0.7.2",
     "@types/jest": "^24.0.22",
     "@types/node": "^12.12.5",
     "@types/react": "^16.9.11",
@@ -45,5 +45,8 @@
     "snapshot-diff": "^0.6.1",
     "ts-jest": "^24.1.0",
     "yarn": "^1.19.1"
+  },
+  "resolutions": {
+    "prosemirror-test-builder": "1.0.1"
   }
 }

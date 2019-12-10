@@ -1,20 +1,18 @@
-import { renderEditor } from "jest-remirror"
-import { EmojiExtension } from "@remirror/extension-emoji"
+import { renderEditor } from 'jest-remirror';
+import { EmojiExtension } from '@remirror/extension-emoji';
 
-test("emoticons replaced with emoji", () => {
+test('emoticons replaced with emoji', () => {
   const {
     nodes: { p, doc },
     add,
-  } = renderEditor({ plainNodes: [], others: [new EmojiExtension()] })
+  } = renderEditor({ plainNodes: [], others: [new EmojiExtension()] });
 
-  add(doc(p("<cursor>")))
-    .insertText(":-)")
+  add(doc(p('<cursor>')))
+    .insertText(':-) ')
     .callback(content => {
-      expect(content.state.doc).toEqualRemirrorDocument(doc(p("😃")))
-    })
-})
-
-import AnnotationExtension, { AnnotationExtensionOptions } from "./annotationExtension"
+      expect(content.state.doc).toEqualRemirrorDocument(doc(p('😃 ')));
+    });
+});
 
 // const create = (params: AnnotationExtensionOptions = Object.create(null)) =>
 //   renderEditor({
